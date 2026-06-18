@@ -41,12 +41,16 @@ def merge_sort(ls):
 if __name__ == "__main__":
     my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 
-    x = range(len(my_list))
-    plt.plot(x, my_list)
+    plt.plot(range(len(my_list)), my_list)
+    plt.title("Before Sorting")
+    plt.xlabel("Index")
+    plt.ylabel("Value")
     plt.show()
 
     merge_sort(my_list)
 
-    x = range(len(my_list))
-    plt.plot(x, my_list)
+    plt.plot(range(len(my_list)), my_list)
+    plt.title("After Sorting")
+    plt.xlabel("Index")
+    plt.ylabel("Value")
     plt.show()
