@@ -1,0 +1,12 @@
+services:
+  test:
+    build: .
+    volumes:
+      - .:/app
+    command: pytest test_find_single.py
+
+  run:
+    build: .
+    volumes:
+      - .:/app
+    command: python find_single.py
